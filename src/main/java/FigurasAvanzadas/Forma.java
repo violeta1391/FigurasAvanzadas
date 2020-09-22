@@ -1,3 +1,5 @@
+package FigurasAvanzadas;
+
 public enum Forma {
     CIRCULO("Circulo"), RECTANGULO("Rectangulo"), TRIANGULO("Triangulo");
 

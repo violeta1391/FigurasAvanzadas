@@ -1,3 +1,5 @@
+package FigurasAvanzadas;
+
 public class Circulo extends FiguraGeometrica {
     private static final Double pi = Math.PI;
     // La constante se usa para BASE y ALTURA

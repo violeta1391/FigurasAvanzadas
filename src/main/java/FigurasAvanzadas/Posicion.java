@@ -1,3 +1,5 @@
+package FigurasAvanzadas;
+
 public class Posicion implements Comparable<Posicion> {
     private Integer x;
     private Integer y;

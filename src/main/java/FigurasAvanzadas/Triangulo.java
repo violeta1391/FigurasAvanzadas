@@ -1,3 +1,5 @@
+package FigurasAvanzadas;
+
 public class Triangulo extends FiguraGeometrica {
     // La constante se usa para BASE y ALTURA
     private static final Integer MAX_ALTURA = 1000;

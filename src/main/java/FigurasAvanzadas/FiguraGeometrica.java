@@ -1,3 +1,5 @@
+package FigurasAvanzadas;
+
 // Clase abstracta -> no se puede instanciar
 //                    si puedo heredar de ella
 public abstract class FiguraGeometrica implements Comparable<FiguraGeometrica> {
