@@ -3,6 +3,7 @@ package FigurasAvanzadas;
 public class Posicion implements Comparable<Posicion> {
     private Integer x;
     private Integer y;
+    
 
     /**
      * Calcula la distancia entre la posicion y el origen (0,0).
@@ -34,8 +35,7 @@ public class Posicion implements Comparable<Posicion> {
      * @return El par ordenado.
      */
     public String toString() {
-        // TODO - Implementar el metodo
-        return "hola";
+        return super.toString() + " posicion en x: " + x + ", posicion en y: " + y;
     }
 
     /**
@@ -45,7 +45,10 @@ public class Posicion implements Comparable<Posicion> {
      */
     @Override
     public int compareTo(Posicion otro) {
-        // TODO - Implementar el metodo
-        return 0;
+        int P = getX().compareTo(otro.getX());
+        if (P == 0) {
+            P = (int)Math.signum(getX().compareTo(otro.getX()));
+        }
+        return P;
     }
 }
