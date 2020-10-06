@@ -15,7 +15,7 @@ public class TrianguloTest {
     Triangulo t4;
 
     @Before
-    public void crearRectangulos () {
+    public void crearTriangulos () {
         t1 = new Triangulo(170);
         t2 = new Triangulo(90);
         t3 = new Triangulo(150, 90);
@@ -94,10 +94,10 @@ public class TrianguloTest {
     
     @Test
     public void testPerimetro () {
-        assertEquals(Double.valueOf(680), t1.getPerimetro(), errorAdmitido);
-        assertEquals(Double.valueOf(360), t2.getPerimetro(), errorAdmitido);
-        assertEquals(Double.valueOf(480), t3.getPerimetro(), errorAdmitido);
-        assertEquals(Double.valueOf(800), t4.getPerimetro(), errorAdmitido);
+        assertEquals(Double.valueOf(550.1315561749643), t1.getPerimetro(), errorAdmitido);
+        assertEquals(Double.valueOf(291.2461179749811), t2.getPerimetro(), errorAdmitido);
+        assertEquals(Double.valueOf(384.30749027719963), t3.getPerimetro(), errorAdmitido);
+        assertEquals(Double.valueOf(644.1658669218482), t4.getPerimetro(), errorAdmitido);
     }
 
     @Test
@@ -118,10 +118,10 @@ public class TrianguloTest {
     
     @Test
     public void testToStringCompleto () {
-        assertEquals("Figura Rectangulo1 (null,null) ++ Altura=170, Base=170", t1.toString());
-        assertEquals("Figura Rectangulo2 (null,null) ++ Altura=90, Base=90", t2.toString());
-        assertEquals("Figura Rectangulo3 (null,null) ++ Altura=90, Base=150", t3.toString());
-        assertEquals("Figura Rectangulo4 (null,null) ++ Altura=190, Base=210", t4.toString());
+        assertEquals("Figura Triangulo1 (null,null) ++ Altura=170, Base=170", t1.toString());
+        assertEquals("Figura Triangulo2 (null,null) ++ Altura=90, Base=90", t2.toString());
+        assertEquals("Figura Triangulo3 (null,null) ++ Altura=90, Base=150", t3.toString());
+        assertEquals("Figura Triangulo4 (null,null) ++ Altura=190, Base=210", t4.toString());
     }
 
     

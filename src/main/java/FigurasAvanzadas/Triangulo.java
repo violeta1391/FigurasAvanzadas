@@ -2,7 +2,7 @@ package FigurasAvanzadas;
 
 public class Triangulo extends FiguraGeometrica {
     // La constante se usa para BASE y ALTURA
-    private static final Integer MAX_ALTURA = 1000;
+    private static final Integer MAX_ALTURA = 500;
     // El numero de serie del primer objeto es 1
     // No se puede repetir el numero para dos triangulos
     private static Integer nroSerie = 0;
@@ -38,6 +38,7 @@ public class Triangulo extends FiguraGeometrica {
      */
     public Double getPerimetro() {
         return Math.sqrt((base / 2 * base / 2) + altura * altura) * 2 + base;
+        
     }
 
     /**
